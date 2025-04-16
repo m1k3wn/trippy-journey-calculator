@@ -1,12 +1,42 @@
-# React + Vite
+# Trippy: Journey Cost Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for calculating and sharing road trip expenses.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Calculate fuel costs based on distance, MPG, and fuel price
+- Add additional costs (tolls, parking, etc.)
+- Customize cost sharing between driver and passengers
+- Adjust driver contribution percentage
+- Real-time cost calculations and updates
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Enter your journey details (name, driver, distance)
+2. Set vehicle MPG and fuel cost
+3. Add passengers with the +/- controls
+4. Toggle driver contribution and set percentage if needed
+5. Add any additional costs like parking or tolls
+6. View the cost breakdown in the dashboard
+
+## Development
+
+This project was built with React and uses:
+
+- React state management for dynamic calculations
+- Custom form components for improved UX
+- CSS for responsive layout and styling
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+## License
+
+MIT
