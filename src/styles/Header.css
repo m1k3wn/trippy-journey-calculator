@@ -1,0 +1,24 @@
+#header {
+  background-color: pink;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}

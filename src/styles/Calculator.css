@@ -1,0 +1,36 @@
+/* Calculator.css */
+.calculator-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row; /* Side by side layout */
+  gap: 20px; /* Space between components */
+}
+
+/* Make InputForm take less width than Dashboard */
+.form-container {
+  flex: 2; /* Proportional width */
+  order: 1; /* Appears first (left) */
+}
+
+.dashboard-container {
+  flex: 3; /* Proportional width */
+  order: 2; /* Appears second (right) */
+}
+
+/* For mobile screens, stack vertically */
+@media (max-width: 768px) {
+  .calculator-container {
+    flex-direction: column;
+  }
+
+  .form-container {
+    order: 1;
+  }
+
+  .dashboard-container {
+    order: 2;
+  }
+}
