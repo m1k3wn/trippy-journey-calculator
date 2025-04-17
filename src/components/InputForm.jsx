@@ -3,6 +3,7 @@ import "../styles/InputForm.css";
 import OtherCosts from "./OtherCosts";
 import PassengerCounter from "./PassengerCounter.jsx";
 import DriverContribution from "./DriverContribution";
+import VehicleSelector from "./VehicleSelector";
 
 export default function InputForm({
   tripDetails,
@@ -22,6 +23,18 @@ export default function InputForm({
       tripDetails.distance > 0 &&
       tripDetails.passengers > 0
     );
+  };
+
+  const handleMpgFromVehicle = (mpgData) => {
+    if (mpgData && mpgData.cityMPG) {
+      onInputChange({
+        target: {
+          name: "mpg",
+          value: mpgData.cityMPG,
+          type: "number",
+        },
+      });
+    }
   };
 
   return (
@@ -55,7 +68,6 @@ export default function InputForm({
           />
         </div>
         <div className="form-group driver-contribution-group">
-          <label className="form-label">Driver cost sharing:</label>
           <DriverContribution
             driverContributes={tripDetails.driverContributes}
             driverContributionPercentage={
@@ -80,6 +92,12 @@ export default function InputForm({
             required
           />
         </div>
+        {/* WIP API call for vehicle MPG */}
+        {/* <div className="form-group">
+          <label className="form-label">Select Vehicle to Autofill MPG:</label>
+          <VehicleSelector onMpgRetrieved={handleMpgFromVehicle} />
+        </div> */}
+
         <div className="form-group">
           <label htmlFor="mpg" className="form-label">
             Vehicle's MPG (miles/gallon):

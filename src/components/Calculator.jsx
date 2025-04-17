@@ -8,7 +8,7 @@ export default function Calculator() {
   const [tripDetails, setTripDetails] = useState({
     journeyName: "",
     driverName: "",
-    fuelCost: "",
+    fuelCost: "1.5",
     mpg: "",
     distance: "",
     passengers: 0,
