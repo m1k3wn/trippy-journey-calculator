@@ -14,7 +14,7 @@ export default function InputForm({
   removeOtherCost,
   resetForm,
 }) {
-  // Basic form validation
+  // Basic form validation WIP
   const isFormValid = () => {
     return (
       tripDetails.journeyName &&

@@ -5,22 +5,20 @@
   padding: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: row; /* Side by side layout */
-  gap: 20px; /* Space between components */
+  flex-direction: row;
+  gap: 20px;
 }
 
-/* Make InputForm take less width than Dashboard */
 .form-container {
-  flex: 2; /* Proportional width */
-  order: 1; /* Appears first (left) */
+  flex: 2;
+  order: 1;
 }
 
 .dashboard-container {
-  flex: 3; /* Proportional width */
-  order: 2; /* Appears second (right) */
+  flex: 3;
+  order: 2;
 }
 
-/* For mobile screens, stack vertically */
 @media (max-width: 768px) {
   .calculator-container {
     flex-direction: column;

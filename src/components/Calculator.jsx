@@ -4,7 +4,6 @@ import InputForm from "./InputForm";
 import "../styles/Calculator.css";
 
 export default function Calculator() {
-  // State
   const [tripDetails, setTripDetails] = useState({
     journeyName: "",
     driverName: "",
@@ -17,7 +16,6 @@ export default function Calculator() {
     otherCosts: [],
   });
 
-  // Reset form function
   const resetForm = () => {
     setTripDetails({
       journeyName: "",
@@ -31,12 +29,11 @@ export default function Calculator() {
     setCurrentOtherCost({ description: "", amount: "" });
   };
 
-  //   Other costs handlers
   const [currentOtherCost, setCurrentOtherCost] = useState({
     description: "",
     amount: "",
   });
-  //    Add cost
+
   const addOtherCost = () => {
     if (currentOtherCost.description && currentOtherCost.amount) {
       setTripDetails({
@@ -46,7 +43,7 @@ export default function Calculator() {
       setCurrentOtherCost({ description: "", amount: "" });
     }
   };
-  //   Remove cost
+
   const removeOtherCost = (index) => {
     const updatedCosts = [...tripDetails.otherCosts];
     updatedCosts.splice(index, 1);
@@ -56,11 +53,9 @@ export default function Calculator() {
     });
   };
 
-  //    Event Handler
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
 
-    // Handle checkbox input separately
     if (type === "checkbox") {
       setTripDetails({
         ...tripDetails,
@@ -80,7 +75,6 @@ export default function Calculator() {
       <InputForm
         tripDetails={tripDetails}
         onInputChange={handleInputChange}
-        // onSubmit={handleSubmit}
         currentOtherCost={currentOtherCost}
         setCurrentOtherCost={setCurrentOtherCost}
         addOtherCost={addOtherCost}

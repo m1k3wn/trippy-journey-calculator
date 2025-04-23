@@ -70,8 +70,6 @@ export default function Dashboard({
 
   return (
     <div className="dashboard-container">
-      {/* <h2 id="trip-summary"> {journeyName || "Trip"} Summary </h2> */}
-
       <div className="dash-fields">
         <div className="main-trip-dash">
           <DashboardItem label="Journey" value={journeyName} />
@@ -96,7 +94,6 @@ export default function Dashboard({
         </div>
 
         <div className="other-costs-dash">
-          {/* First component for breakdown */}
           {otherCosts.length > 0 ? (
             <div className="dash-item other-costs-breakdown">
               <span className="dash-item-label">Cost Breakdown</span>
@@ -124,7 +121,6 @@ export default function Dashboard({
             </div>
           )}
 
-          {/* Second component for total */}
           <DashboardItem
             label="Other Costs Total"
             value={`£${totalOtherCosts.toFixed(2)}`}
@@ -134,7 +130,6 @@ export default function Dashboard({
 
         <div className="trip-totals-dash">
           <div className="per-person-costs">
-            {/* Conditional rendering based on cost sharing setup */}
             {!hasCustomCostSharing &&
               parseInt(passengers) > 0 &&
               driverContributes && (
@@ -158,20 +153,6 @@ export default function Dashboard({
                   value={`£${passengerCost.toFixed(2)}`}
                 />
               )}
-            {/* If driver doesn't contribute
-          {!driverContributes && parseInt(passengers) > 0 && (
-            <DashboardItem
-              label="Driver Contribution"
-              value="Not contributing"
-            />
-          )} */}
-            {/* If no passengers
-            {parseInt(passengers) === 0 && (
-              <DashboardItem
-                label="Cost Distribution"
-                value="Driver pays full amount"
-              />
-            )} */}
           </div>
           <div className="total-cost-container">
             <DashboardItem

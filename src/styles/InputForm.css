@@ -4,7 +4,6 @@
   border-radius: 10px;
 }
 
-/* Center align the main title */
 .form-container h2 {
   text-align: center;
   margin-bottom: 15px;
@@ -25,7 +24,6 @@
   width: 180px;
 }
 
-/* Updated styling for all input fields */
 input[type="text"],
 input[type="number"] {
   padding: 10px 12px;
@@ -39,7 +37,7 @@ input[type="number"] {
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-  border-color: #4a4a4a;
+  border-color: #554a6c;
 }
 
 .other-costs-inputs {
@@ -70,7 +68,6 @@ input[type="number"]:focus {
   cursor: pointer;
 }
 
-/* Center align the other costs section title */
 .form-group-other-costs-section h3 {
   margin-bottom: 10px;
   text-align: left;
@@ -104,7 +101,6 @@ input[type="number"]:focus {
   margin-right: 10px;
 }
 
-/* Passenger Counter */
 .passenger-counter {
   display: flex;
   align-items: center;
@@ -140,7 +136,6 @@ input[type="number"]:focus {
   text-align: center;
 }
 
-/* Driver contribution */
 .driver-contribution {
   display: flex;
   flex-direction: column;
@@ -258,7 +253,6 @@ input[type="number"]:focus {
   margin-bottom: 8px;
 }
 
-/* Reset button styling */
 .reset-button {
   margin-top: -10px;
   padding: 12px 24px;
@@ -301,14 +295,12 @@ input[type="number"]:focus {
   transform: scale(1.2);
 }
 
-/* Remove number input spinners */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
