@@ -118,7 +118,7 @@ input[type="number"]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4a4a4a;
+  background-color: #b8b08d;
   color: white;
   border: none;
   border-radius: 8px;
@@ -128,6 +128,10 @@ input[type="number"]:focus {
 .counter-btn:disabled {
   background-color: #7a7a7a;
   cursor: not-allowed;
+}
+
+.counter-btn:hover {
+  background-color: #9a926e;
 }
 
 .counter-value {
@@ -259,7 +263,7 @@ input[type="number"]:focus {
   margin-top: -10px;
   padding: 12px 24px;
   border-radius: 8px;
-  background-color: #4a4a4a;
+  background-color: #b8b08d;
   color: white;
   border: none;
   font-size: 16px;
@@ -270,9 +274,16 @@ input[type="number"]:focus {
 }
 
 .reset-button:hover {
-  background-color: #333;
+  background-color: #9a926e;
 }
 
+#add-cost-button {
+  background-color: #b8b08d;
+}
+
+#add-cost-button:hover {
+  background-color: #9a926e;
+}
 .remove-cost-btn {
   background: none;
   border: none;

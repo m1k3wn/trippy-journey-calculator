@@ -37,6 +37,7 @@ export default function OtherCosts({
           />
           <button
             type="button"
+            id="add-cost-button"
             onClick={addOtherCost}
             disabled={!currentOtherCost.description || !currentOtherCost.amount}
           >
