@@ -165,13 +165,13 @@ export default function Dashboard({
               value="Not contributing"
             />
           )} */}
-            {/* If no passengers */}
+            {/* If no passengers
             {parseInt(passengers) === 0 && (
               <DashboardItem
                 label="Cost Distribution"
                 value="Driver pays full amount"
               />
-            )}
+            )} */}
           </div>
           <div className="total-cost-container">
             <DashboardItem

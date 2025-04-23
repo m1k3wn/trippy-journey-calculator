@@ -1,19 +1,23 @@
 #header {
-  background-color: pink;
+  background-color: #f2d492;
   width: 100%;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 20px; /* Added horizontal padding */
   box-sizing: border-box;
   line-height: 1.2;
   position: relative;
   left: 0;
   right: 0;
   top: 0;
-  text-align: center;
+
+  /* Add flexbox to align items horizontally */
+  display: flex;
+  justify-content: space-between; /* This pushes items to opposite corners */
+  align-items: center; /* Vertically center the elements */
 }
 
 .main-title {
-  margin: 0 0 10px 0;
+  margin: 0;
   font-size: 2rem;
 }
 
@@ -21,4 +25,17 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-title {
+    margin-bottom: 5px;
+  }
 }

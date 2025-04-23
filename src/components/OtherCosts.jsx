@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/InputForm.css";
 
 export default function OtherCosts({
   currentOtherCost,
@@ -52,7 +53,11 @@ export default function OtherCosts({
               <li key={index}>
                 <span className="cost-description">{cost.description}</span>
                 <span className="cost-amount">£{cost.amount}</span>
-                <button type="button" onClick={() => removeOtherCost(index)}>
+                <button
+                  type="button"
+                  className="remove-cost-btn"
+                  onClick={() => removeOtherCost(index)}
+                >
                   ✕
                 </button>
               </li>

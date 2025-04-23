@@ -30,8 +30,8 @@
 
 /* For highlighting important values */
 .highlight-item {
-  background-color: #e3f2fd;
-  border-left: 3px solid #2196f3;
+  background-color: #f2d492;
+  /* border-left: 3px solid #2196f3; */
 }
 
 .highlight-item .dash-item-value {

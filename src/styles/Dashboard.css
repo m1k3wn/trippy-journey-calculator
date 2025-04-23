@@ -1,5 +1,5 @@
 .dashboard-container {
-  background-color: white;
+  background-color: #b8b08d;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -18,13 +18,13 @@
 }
 
 .dash-item {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   padding: 12px 15px;
   border-radius: 6px;
 }
 
 .main-trip-dash {
-  background-color: #9dacba;
+  /* background-color: #d4afcd; */
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -33,7 +33,7 @@
 }
 
 .distance-cost-dash {
-  background-color: #86b0d7;
+  /* background-color: #d4afcd; */
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -42,7 +42,7 @@
 }
 
 .other-costs-dash {
-  background-color: #d786bd;
+  /* background-color: #d4afcd; */
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -61,7 +61,7 @@
 }
 
 .trip-totals-dash {
-  background-color: #86d78d;
+  /* background-color: #40531b; */
   padding: 1rem;
   display: flex;
   flex-direction: row;
