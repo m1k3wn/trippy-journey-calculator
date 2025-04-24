@@ -40,6 +40,7 @@ input[type="number"]:focus {
   border-color: #554a6c;
 }
 
+/* Original other-costs-inputs - now only applies on desktop */
 .other-costs-inputs {
   display: flex;
   gap: 10px;
@@ -303,4 +304,64 @@ input[type="number"]::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .form-label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+  }
+
+  /* Restructure other-costs-inputs for mobile */
+  .other-costs-inputs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .other-costs-inputs input {
+    width: 100%;
+  }
+
+  .other-costs-inputs input[type="number"] {
+    max-width: none; /* Remove max-width constraint on mobile */
+  }
+
+  .other-costs-inputs button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* Adjust passenger counter for mobile */
+  .passenger-counter {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Make slider more mobile-friendly */
+  .slider-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .percentage-display {
+    text-align: center;
+  }
+
+  /* Make reset button full width on mobile */
+  .reset-button {
+    width: 100%;
+  }
 }
