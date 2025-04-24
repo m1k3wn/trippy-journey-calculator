@@ -1,0 +1,51 @@
+/* Updated PDF export button styles with new color scheme */
+
+.pdf-export-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pdf-export-button {
+  background-color: #474056; /* Dark purple tone */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-export-button:hover {
+  background-color: #5a526e; /* Lighter purple on hover */
+  transform: translateY(-2px);
+}
+
+.pdf-export-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-export-button:disabled {
+  background-color: #b8b08d; /* Green tone when disabled */
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* You can add an icon before the text with this CSS */
+.pdf-export-button::before {
+  content: "📄";
+  margin-right: 8px;
+}
+
+/* Optional hover effect for the document icon */
+.pdf-export-button:hover::before {
+  content: "📥";
+}

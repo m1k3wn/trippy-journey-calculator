@@ -1,5 +1,6 @@
 import "../styles/Dashboard.css";
 import DashboardItem from "./DashboardItem";
+import PdfExport from "./PdfExport";
 
 export default function Dashboard({
   journeyName,
@@ -67,6 +68,25 @@ export default function Dashboard({
     driverContributionPercentage < 100 &&
     driverContributionPercentage > 0 &&
     parseInt(passengers) > 0;
+
+  // Gather tripDetails for pass to PdfExport component
+  const tripDetails = {
+    journeyName,
+    driverName,
+    fuelCost,
+    mpg,
+    distance,
+    passengers,
+    driverContributes,
+    driverContributionPercentage,
+    otherCosts,
+    totalFuelCost,
+    totalOtherCosts,
+    totalTripCost,
+    costPerPerson,
+    driverCost,
+    passengerCost,
+  };
 
   return (
     <div className="dashboard-container">
@@ -163,6 +183,11 @@ export default function Dashboard({
           </div>
         </div>
       </div>
+      {/* PDF Export Button */}
+      <div className="pdf-export-container">
+        <PdfExport tripDetails={tripDetails} />
+      </div>
     </div>
+    // </div>
   );
 }
